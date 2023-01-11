@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { useMemo, useState } from 'react';
+import Button from './components/Button/Button';
 
-function App() {
+const App = () => {
+  const [buttonVariant, setButtonVariant] = useState('');
+
+  const onVariantChangeHandler = (event) => {
+    setButtonVariant(event.target.value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <label>Enter button variant</label>
+      <input value={buttonVariant} onChange={onVariantChangeHandler} />
+      <Button variant="text" />
+      <Button variant="contained" />
+      <Button variant="outlined" />
     </div>
   );
-}
+};
 
 export default App;

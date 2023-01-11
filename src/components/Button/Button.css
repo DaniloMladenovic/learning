@@ -1,0 +1,48 @@
+.my-button {
+  border-radius: 3px;
+  padding: 6px 12px;
+  height: 36px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-position: center;
+}
+
+.my-button--contained {
+  background-color: #2d77ed;
+  color: white;
+  border: none;
+}
+
+.my-button--contained:hover {
+  background-color: #1062e7;
+  transition: 1s;
+}
+
+.my-button--contained:active {
+  background-color: #8e4c80;
+}
+
+.my-button--outlined {
+  background-color: white;
+  border-color: #2d77ed;
+  color: #2d77ed;
+}
+
+.my-button--outlined:hover {
+  background-color: rgb(233, 244, 255);
+  transition: 1s;
+}
+
+.my-button--text {
+  background-color: transparent;
+  border: none;
+  color: #2d77ed;
+}
+
+.my-button--text:hover {
+  background-color: rgb(233, 244, 255);
+  transition: 1s;
+}

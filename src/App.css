@@ -1,16 +1,21 @@
-div {
+.container-div {
   display: flex;
   flex-direction: column;
+}
+
+.buttons-div {
+  display: inline-block;
   box-sizing: border-box;
   padding: 10px;
 }
 
 div > * {
-  margin-top: 20px;
+  margin-left: 5px;
 }
 
 input {
   height: 30px;
+  width: 320px;
 }
 
 label {
